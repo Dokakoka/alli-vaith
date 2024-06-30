@@ -10,254 +10,284 @@
     <link rel="icon" href="https://images.squarespace-cdn.com/content/6639ea7d97bd2d1706520299/9945c629-af98-4427-8894-e9074e3c3d83/Logo+Full+Color.png?content-type=image%2Fpng" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <style>
+<style>
+h1 {
+    font-family: 'Crimson Text' !important;
+    font-size: 38px !important;
+    font-weight: 300 !important;
+    line-height: 50px !important;
+}
+h2 {
+    font-family: 'Montserrat' !important;
+    font-size: 34px !important;
+    font-weight: 300 !important;
+    line-height: 42.67px !important;
+}
+h3 {
+    font-family: 'Crimson Text' !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+    line-height: 46.79px !important;
+}
+h4 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3em; 
+}
+h5 {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3em;  
+}
+.content-bar p, .form li {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em; 
+}
+h6 {
+    font-family: 'Crimson Text' !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+}
+.benefits p, .challenge-success p, .our-journey p, .alli li, .alli p, .book-now p {
+    font-family: 'Montserrat' !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 28px !important;
+}
+.our-numbers h2 {
+    font-family: 'Crimson Text' !important;
+    font-size: 50px !important;
+    line-height: 10px;
+    font-weight: 600 !important;
+}
+.our-numbers p {
+    font-family: 'Crimson Text' !important;
+    font-size: 24.2px !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+.our-journey p strong, .alli li strong {
+    font-weight: 700 !important;
+}
+.reviews {
+    font-family: 'Montserrat' !important;
+    font-size: 20.2px !important;
+    font-weight: 600 !important;
+}
+.problems li, .booking li, input {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.problems li {
+    line-height: 2.3em;
+}
+.hero p {
+    font-family: 'Montserrat' !important;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 28px !important;
+}
+.hero, .challenge {
+    background-image: url('assets/img/hero-bg.png');
+}
+.bg-primary {
+  background-color: #434867 !important;
+}
+.text-primary {
+  color: #434867 !important;
+}
+.bg-secondary {
+  background-color: #FAFAFA !important;
+}
+.alli-btn {
+  background-color: #8DC5B5;
+  color: white;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  padding: 10px 56px 10px 56px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+}
+.challenge-img {
+    width: 100%;
+}
+.green-box {
+    background-color: #8CC5B5;
+    color: white;
+}
+.green-box p {
+    font-family: 'Crimson Text' !important;
+    font-size: 20.2px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+}
+.section-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.content-bar {
+    max-width: 40%;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #424766;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    color: white;
+}
+.box h1 {
+    font-family: 'Crimson Text' !important;
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    line-height: 50px !important;
+}
+.bg-gray {
+    background-color: #F8F8F8;
+}
+.booking {
+    background-color: #818285;
+}
+.content-bar {
+    max-width: 40%;
+}
+form input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+.alli ul, .booking ul, .problems ul {
+    list-style: none;
+}
+.alli ul li::before, .booking ul li::before {
+    color: #8CC5B5;
+    content: "•";
+    font-size: 50px;
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+.problems ul li::before {
+    color: white;
+    content: "•";
+    font-size: 50px;
+    vertical-align: sub;
+    padding-right: 5px;
+}
+.sticky-footer {
+    display: none;
+}
+footer {
+    background-image: url('assets/img/Rectangle+4.png');
+}
+.call {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
     h1 {
-        font-family: 'Crimson Text' !important;
-        font-size: 38px !important;
-        font-weight: 300 !important;
-        line-height: 50px !important;
+        font-size: 32px !important;
+        line-height: 40px !important;
     }
     h2 {
-        font-family: 'Montserrat' !important;
-        font-size: 34px !important;
-        font-weight: 300 !important;
-        line-height: 42.67px !important;
+        font-size: 28px !important;
+        line-height: 35px !important;
     }
     h3 {
-        font-family: 'Crimson Text' !important;
-        font-size: 32px !important;
-        font-weight: 500 !important;
-        line-height: 46.79px !important;
+        font-size: 26px !important;
+        line-height: 35px !important;
     }
     h4 {
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.3em; 
+        font-size: 16px;
     }
     h5 {
-        font-family: 'Montserrat';
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 1.3em;  
-    }
-    .content-bar p, .form li {
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.3em; 
+        font-size: 20px;
     }
     h6 {
-        font-family: 'Crimson Text' !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
+        font-size: 18px !important;
+        line-height: 22px !important;
+    }
+    .benefits p, .challenge-success p, .our-journey p, .alli li, .alli p, .book-now p, .hero p {
+        font-size: 16px !important;
         line-height: 24px !important;
     }
-    .benefits p, .challenge-success p, .our-journey p, .alli li, .alli p, .book-now p {
-        font-family: 'Montserrat' !important;
-        font-size: 18px !important;
-        font-weight: 300 !important;
-        line-height: 28px !important;
-    }
     .our-numbers h2 {
-        font-family: 'Crimson Text' !important;
-        font-size: 50px !important;
-        line-height: 10px;
-        font-weight: 600 !important;
+        font-size: 40px !important;
+        line-height: 8px;
     }
     .our-numbers p {
-        font-family: 'Crimson Text' !important;
-        font-size: 24.2px !important;
-        font-weight: 600 !important;
-        margin: 0 !important;
-    }
-    .our-journey p strong, .alli li strong {
-        font-weight: 700 !important;
+        font-size: 20px !important;
     }
     .reviews {
-        font-family: 'Montserrat' !important;
-        font-size: 20.2px !important;
-        font-weight: 600 !important;
+        font-size: 18px !important;
     }
     .problems li, .booking li, input {
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.3em;
-    }
-    .problems li {
-        line-height: 2.3em;
-    }
-    .hero p {
-        font-family: 'Montserrat' !important;
-        font-size: 18px !important;
-        font-weight: 300 !important;
-        line-height: 28px !important;
-    }
-    .hero, .challenge {
-        background-image: url('assets/img/hero-bg.png');
-    }
-    .bg-primary {
-      background-color: #434867 !important;
-    }
-    .text-primary {
-      color: #434867 !important;
-    }
-    .bg-secondary {
-      background-color: #FAFAFA !important;
-    }
-    .alli-btn {
-      background-color: #8DC5B5;
-      color: white;
-      display: inline-block;
-      border: none;
-      text-decoration: none;
-      padding: 10px 56px 10px 56px;
-      border-radius: 5px;
-      font-weight: 400;
-      font-family: 'Montserrat';
-    }
-    .challenge-img {
-        width: 100%;
-    }
-    .green-box {
-        background-color: #8CC5B5;
-        color: white;
+        font-size: 16px;
     }
     .green-box p {
-        font-family: 'Crimson Text' !important;
-        font-size: 20.2px !important;
-        font-weight: 500 !important;
-        line-height: 30px !important;
+        font-size: 18px !important;
+        line-height: 28px !important;
     }
-    .section-bar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
+    .alli-btn {
+        font-size: 12px;
+    }
+    .challenge-img {
+        width: 75%;
     }
     .content-bar {
-        max-width: 40%;
+        max-width: 90%;
+    }
+    .section-bar p, .section-bar h4 {
+        text-align: center;
     }
     .box {
-        width: 150px;
-        height: 150px;
-        background-color: #424766;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 80px;
-        color: white;
+        margin-right: 0px;
     }
-    .box h1 {
-        font-family: 'Crimson Text' !important;
-        font-size: 100px !important;
-        font-weight: 700 !important;
-        line-height: 50px !important;
-    }
-    .bg-gray {
-        background-color: #F8F8F8;
-    }
-    .booking {
-        background-color: #818285;
-    }
-    .content-bar {
-        max-width: 40%;
-    }
-    form input {
-        width: 100%;
-        border: none;
-        border-radius: 5px;
-        margin-top: 20px;
-        background-color: #F2F2F2;
-        padding: 10px;
-    }
-    .alli ul, .booking ul, .problems ul {
-        list-style: none;
-    }
-    .alli ul li::before, .booking ul li::before {
-        color: #8CC5B5;
-        content: "•";
-        font-size: 50px;
-        vertical-align: text-bottom;
-        padding-right: 5px;
-    }
-    .problems ul li::before {
-        color: white;
-        content: "•";
-        font-size: 50px;
-        vertical-align: sub;
-        padding-right: 5px;
+    .reviews, .call {
+        font-family: 'Montserrat' !important;
+        font-size: 16.2px !important;
+        font-weight: 600 !important;
+        white-space: nowrap;
+        padding-right:0px !important;
+        padding-left:0px !important;
     }
     .sticky-footer {
-        display: none;
+        display:block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #424766;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        z-index: 99999;
     }
-    footer {
-        background-image: url('assets/img/Rectangle+4.png');
-    }
-    .call {
-        color: white !important;
-        text-decoration: none !important;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 30px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        h1.display-4 {
-            max-width: 90%;
-        }
-        .alli-btn {
-            font-size: 12px;
-        }
-        .challenge-img {
-            width: 75%;
-        }
-        .sold-out-img {
-            height: auto;
-            width: 100%;
-        }
-        .content-bar {
-            max-width: 90%;
-        }
-        .footer-text {
-            font-size: 12px !important;
-        }
-        .section-bar p, .section-bar h4 {
-            text-align: center;
-        }
-        .box {
-            margin-right: 0px;
-        }
-        .reviews, .call {
-            font-family: 'Montserrat' !important;
-            font-size: 16.2px !important;
-            font-weight: 600 !important;
-            white-space: nowrap;
-            padding-right:0px !important;
-            padding-left:0px !important;
-        }
-        .sticky-footer {
-            display:block;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #424766;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            z-index: 99999;
-        }
-    }
-  </style>
+}
+</style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <body>
     <div class="sticky-footer">
