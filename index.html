@@ -85,6 +85,9 @@
         font-weight: 400;
         line-height: 1.3em;
     }
+    .problems li {
+        line-height: 2.3em;
+    }
     .hero p {
         font-family: 'Montserrat' !important;
         font-size: 18px !important;
@@ -113,6 +116,9 @@
       border-radius: 5px;
       font-weight: 400;
       font-family: 'Montserrat';
+    }
+    .challenge-img {
+        width: 100%;
     }
     .green-box {
         background-color: #8CC5B5;
@@ -168,7 +174,7 @@
         background-color: #F2F2F2;
         padding: 10px;
     }
-    .alli ul, .booking ul {
+    .alli ul, .booking ul, .problems ul {
         list-style: none;
     }
     .alli ul li::before, .booking ul li::before {
@@ -176,6 +182,13 @@
         content: "•";
         font-size: 50px;
         vertical-align: text-bottom;
+        padding-right: 5px;
+    }
+    .problems ul li::before {
+        color: white;
+        content: "•";
+        font-size: 50px;
+        vertical-align: sub;
         padding-right: 5px;
     }
     .sticky-footer {
@@ -203,6 +216,9 @@
         }
         .alli-btn {
             font-size: 12px;
+        }
+        .challenge-img {
+            width: 75%;
         }
         .sold-out-img {
             height: auto;
@@ -242,7 +258,7 @@
         }
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Snh6WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <body>
     <div class="sticky-footer">
         <a href="tel:507-513-1501" class="call">Call us Now 507-513-1501</a>
@@ -280,7 +296,7 @@
                     <img class="w-100 flex-grow-1" src="assets/img/Image+[img-fluid].png" alt="">
                 </div>
                 <div class="col-md-6 col-12 d-flex flex-column p-md-0">
-                    <div class="green-box flex-grow-1 d-flex align-items-center justify-content-center px-3">
+                    <div class="green-box flex-grow-1 d-flex align-items-center justify-content-center p-5 px-3">
                         <div>
                             <p>Are you struggling with:</p>
                             <ul>
@@ -335,7 +351,7 @@
             <div class="row mt-5">
                 <div class="col-1"></div>
                 <div class="col-md-3 col-12 mb-5 mb-md-0 d-md-block d-flex justify-content-center">
-                    <img class="w-75 w-md-100" src="assets/img/Image+[img-fluid]+(1).png" alt="">
+                    <img class="challenge-img" src="assets/img/Image+[img-fluid]+(1).png" alt="">
                 </div>
                 <div class="col-1"></div>
                 <div class="col-md-7 col-12">
@@ -375,7 +391,7 @@
                     <img class="w-100" src="assets/img/Image+[w-100].png" alt="">
                 </div>
                 <div class="col-1"></div>
-                <div class="col-md-6 col-12 py-5">
+                <div class="col-md-6 col-12 pt-5 mt-5">
                     <h3>Here’s what makes my approach unique:</h3>  
                     <ul>
                         <li><strong>Simplified Experience:</strong> I streamline the homebuying process, making it efficient and straightforward, eliminating unnecessary stress.</li>
@@ -414,7 +430,7 @@
             <div class="row mt-5">
                 <div class="col-1"></div>
                 <div class="col-md-3 col-12 mb-5 mb-md-0 d-md-block d-flex justify-content-center">
-                    <img class="w-75 w-md-100" src="assets/img/Image+[w-100]+(1).png" alt="">
+                    <img class="challenge-img" src="assets/img/Image+[w-100]+(1).png" alt="">
                 </div>
                 <div class="col-1"></div>
                 <div class="col-md-7 col-12">
@@ -483,7 +499,7 @@
             <div class="row mt-5">
                 <div class="col-1"></div>
                 <div class="col-md-3 col-12 mb-5 mb-md-0 d-md-block d-flex justify-content-center">
-                    <img class="w-75 w-md-100" src="assets/img/Image+[img-fluid]+(2).png" alt="">
+                    <img class="challenge-img" src="assets/img/Image+[img-fluid]+(2).png" alt="">
                 </div>
                 <div class="col-1"></div>
                 <div class="col-md-7 col-12">
